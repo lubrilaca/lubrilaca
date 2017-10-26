@@ -1,0 +1,8 @@
+visita:
+    resource: "@VisitaBundle/Controller/"
+    type:     annotation
+    prefix:   /visita
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

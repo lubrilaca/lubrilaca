@@ -1,0 +1,12 @@
+{% extends 'layout/menu.html.twig' %}
+
+{% block body %}
+{% for message in app.flashes('notice') %}
+    <div class="flash-notice">
+        {{ message }}
+    </div>
+{% endfor %}
+{{form_start(form, {'enctype':'multipart/form-data'})}}
+
+{{form_end(form)}}
+{% endblock %}
